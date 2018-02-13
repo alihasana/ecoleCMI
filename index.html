@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
 
-<title>Boostrap 4 - Tutorial</title>
+<title>Ecole CMI</title>
  <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="author" content="alihasana">
@@ -11,8 +11,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
 
- <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Bootstrap CSS -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/custom.css">
 
  <!-- Fonts -->
@@ -25,20 +30,49 @@
 
 <body>
 
+<div id="wrapper">
+	<!-- Sidebar -->
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav" style="margin-left:0;">
+			<li class="sidebar-brand">
+				<a href="#menu-toggle" id="menu-toggle" style="margin-top:20px;float:right;">
+					<i class="fa fa-bars" style="font-size:20px !Important;" aria-hidden="true" aria-hidden="true"></i>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-user fa-lg" aria-hidden="true"> </i>
+					<span style="margin-left:10px;">Membre</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-book nav_icon" aria-hidden="true"> </i>
+					<span style="margin-left:10px;">Inscriptions</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-file-text" aria-hidden="true"> </i>
+					<span style="margin-left:10px;"> Section</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-tachometer" aria-hidden="true"> </i>
+					<span style="margin-left:10px;"> Section</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- /#sidebar-wrapper -->
 
-
- <!-- JavaScripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-
-<script src="js/bootstrap.min.js"></script>
-<script src="js/tether.min.js"></script>
-
-<script type="text/javascript">
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})	
-
+<!-- /#wrapper -->
+<script>
+	$("#menu-toggle").click(function (e) {
+		e.preventDefault();
+		$("#wrapper").toggleClass("toggled");
+	});
 </script>
-
 </body>
 </html>
