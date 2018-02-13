@@ -1,0 +1,83 @@
+<!-- DOCTYPE -->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+<title>Ecole CMI &mdash; Membre</title>
+ <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="author" content="alihasana">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+<!-- Bootstrap CSS and JS -->
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/my-login.css">
+<link rel="stylesheet" href="css/navbar.css">
+
+ <!-- Fonts -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div id="wrapper">
+	<div id="sidebar-wrapper">
+		<ul class="sidebar-nav" style="margin-left:0;">
+			<li class="sidebar-brand">
+				<a href="#menu-toggle" id="menu-toggle" style="margin-top:20px;float:right;">
+					<i class="fa fa-bars" style="font-size:20px !Important;" aria-hidden="true" aria-hidden="true"></i>
+			</li>
+			<li>
+				<a href="home.html">
+					<i class="fa fa-user" aria-hidden="true"> </i>
+					<span style="margin-left:1px;">Membre</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-book" aria-hidden="true"> </i>
+					<span style="margin-left:1px;">Inscriptions</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-file-text" aria-hidden="true"> </i>
+					<span style="margin-left:1px;"> Section</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-tachometer" aria-hidden="true"> </i>
+					<span style="margin-left:1px;"> Section</span>
+				</a>
+			</li>
+			<li>
+				<a href="register.html">
+					<i class="fa fa-comment-o" aria-hidden="true"> </i>
+					<span style="margin-left:1px;">Registration</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<!-- /#sidebar-wrapper -->
+
+<!-- /#wrapper -->
+<script src="js/jquery.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/my-login.js"></script>
+<script>
+	$("#menu-toggle").click(function (e) {
+		e.preventDefault();
+		$("#wrapper").toggleClass("toggled");
+	});
+</script>
+<!-- /#End of wrapper -->
+</body>
+</html>
