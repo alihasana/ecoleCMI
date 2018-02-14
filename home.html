@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
 
-<title>Ecole CMI &mdash; Membre</title>
+<title>Ecole CMI &mdash; Membres</title>
  <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="author" content="alihasana">
@@ -17,6 +17,7 @@
 <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/my-login.css">
 <link rel="stylesheet" href="css/navbar.css">
+<link rel="stylesheet" href="css/custom.css">
 
  <!-- Fonts -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -36,7 +37,7 @@
 			<li>
 				<a href="home.html">
 					<i class="fa fa-user" aria-hidden="true"> </i>
-					<span style="margin-left:1px;">Membre</span>
+					<span style="margin-left:1px;">Membres</span>
 				</a>
 			</li>
 			<li>
@@ -48,13 +49,19 @@
 			<li>
 				<a href="#">
 					<i class="fa fa-file-text" aria-hidden="true"> </i>
-					<span style="margin-left:1px;"> Section</span>
+					<span style="margin-left:1px;">Classes</span>
 				</a>
 			</li>
 			<li>
 				<a href="#">
 					<i class="fa fa-tachometer" aria-hidden="true"> </i>
-					<span style="margin-left:1px;"> Section</span>
+					<span style="margin-left:1px;">Matières</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-comment-o" aria-hidden="true"> </i>
+					<span style="margin-left:1px;">Notes</span>
 				</a>
 			</li>
 			<li>
@@ -67,11 +74,27 @@
 	</div>
 </div>
 <!-- /#sidebar-wrapper -->
+<div class="homecontainer w-100">
+	<div class="row justify-content-left">
+		<form class="form-group col-9" role="search">
+			<div class="input-group add-on">
+				<input type="text" class="form-control" placeholder="Je cherche quelqu'un.." name="studentsearch" >
+				<div class="input-group-btn">
+					<button class="btn btn-default" type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<div href= "#" class="row justify-content-left" style="padding-left:15px; ">
+		<button type="button" class="btn btn-raised btn-secondary" >Un Nouveau</button>
+	</div>
+</div>
 
 <!-- /#wrapper -->
 <script src="js/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
-<script src="js/my-login.js"></script>
 <script>
 	$("#menu-toggle").click(function (e) {
 		e.preventDefault();

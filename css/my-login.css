@@ -65,14 +65,15 @@ body.my-login-page {
 	text-align: center;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and(min-width:768px) {
 	.my-login-page .card-wrapper {
 		width: 90%;
 		margin: 0 auto;
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width:414px),  
+(min-width:414px) {
 	.my-login-page .card.fat {
 		padding-left: .7cm;
 	}
