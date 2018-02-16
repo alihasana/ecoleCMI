@@ -86,44 +86,97 @@
 						</button>
 					</div>
 				</div>
-			</form>
+			</form>	
+		</div>
+		<div href="#" class="row justify-content-left" style="padding-left:15px; ">
+			<button type="button" class="btn btn-raised btn-secondary">Un Nouveau</button>
 		</div>
 		
-		<div href= "#" class="row justify-content-left" style="padding-left:15px; ">
-			<button type="button" class="btn btn-raised btn-secondary" >Un Nouveau</button>
-		</div>
 		<div class="table-responsive col-10">
 		<div class="row">
 			<table class="table table-striped">
 				<thead class="thead-light">
 					<tr>
-						<th scope="col">#</th>
-						<th scope="col">First</th>
-						<th scope="col">Last</th>
-						<th scope="col">Handle</th>
+						<th scope="col">Select</th>
+						<th scope="col">Nom Prénom</th>
+						<th scope="col">Date de naissance</th>
+						<th scope="col">Age</th>
+						<th scope="col">Role</th>
+						<th scope="col">Sex</th>
+						<th scope="col">Classe</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						<th scope="row">1</th>
-						<td>Mark</td>
-						<td>Otto</td>
-						<td>@mdo</td>
+						<th scope="row">
+							<input type="checkbox" name="aggree" value="1">						
+						</th>
+						<td>Giacomo Guilizzo</td>
+						<td>20/04/1987</td>
+						<td>30</td>
+						<td>Responsable de élève</td>
+						<td>File</td>
+						<td>Coran Niv1</td>
 					</tr>
 					<tr>
-						<th scope="row">2</th>
-						<td>Jacob</td>
-						<td>Thornton</td>
-						<td>@fat</td>
+						<th scope="row">
+							<input type="checkbox" name="aggree" value="1">
+						</th>
+						<td>Giacomo Guilizzo</td>
+						<td>20/04/1987</td>
+						<td>30</td>
+						<td>Responsable de élève</td>
+						<td>File</td>
+						<td>Coran Niv1</td>
 					</tr>
 					<tr>
-						<th scope="row">3</th>
-						<td>Larry</td>
-						<td>the Bird</td>
-						<td>@twitter</td>
+						<th scope="row">
+							<input type="checkbox" name="aggree" value="1">
+						</th>
+						<td>Marco Botton Soufi</td>
+						<td>25/12/2010</td>
+						<td>7</td>
+						<td>Elève</td>
+						<td>Garcon</td>
+						<td>Arabe Rawdati</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							<input type="checkbox" name="aggree" value="1">
+						</th>
+						<td>Mariah Maclachlan Jana Half</td>
+						<td>03/07/2013</td>
+						<td>5</td>
+						<td>Elève</td>
+						<td>File</td>
+						<td>Arabe Rawdati</td>
+					</tr>
+					<tr>
+						<th scope="row">
+							<input type="checkbox" name="aggree" value="1">
+						</th>
+						<td>Amine AGGOUN</td>
+						<td>27/11/1980</td>
+						<td>37</td>
+						<td>Enseignant</td>
+						<td>Garçcon</td>
+						<td>Coran Niv2</td>
 					</tr>
 				</tbody>
 			</table>
+			
+			<form class="form-check-inline">
+				<label class="mr-sm-2" for="inlineFormCustomSelect"></label>
+				<select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+					<option selected>Editer et envoyer bullentins</option>
+					<option value="1">Editer les bullentins</option>
+					<option value="2">Envoyer Mail</option>
+					<option value="3">Envoyer SMS</option>
+					<option value="4">Notification d'absence</option>
+				</select>
+				<button type="submit" class="btn btn-primary">GO <span class="fa fa-paper-plane"></span></button>
+				
+			</form>
 		</div>
 		</div>
 	</div>
