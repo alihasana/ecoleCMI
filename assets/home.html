@@ -14,10 +14,11 @@
 <!-- Bootstrap CSS and JS -->
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/my-login.css">
-<link rel="stylesheet" href="css/navbar.css">
-<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../css/my-login.css">
+<link rel="stylesheet" href="../css/navbar.css">
+<link rel="stylesheet" href="../css/custom.css">
+
 
  <!-- Fonts -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -25,54 +26,8 @@
 </head>
 
 <body>
-
-<!-- Sidebar -->
-<div id="wrapper">
-	<div id="sidebar-wrapper">
-		<ul class="sidebar-nav" style="margin-left:0;">
-			<li class="sidebar-brand">
-				<a href="#menu-toggle" id="menu-toggle" style="margin-top:20px;float:right;">
-					<i class="fa fa-bars" style="font-size:20px !Important;" aria-hidden="true" aria-hidden="true"></i>
-			</li>
-			<li>
-				<a href="home.html">
-					<i class="fa fa-user" aria-hidden="true"> </i>
-					<span style="margin-left:1px;">Membres</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-edit" aria-hidden="true"> </i>
-					<span style="margin-left:1px;">Inscriptions</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-file-text" aria-hidden="true"> </i>
-					<span style="margin-left:1px;">Classes</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-tachometer" aria-hidden="true"> </i>
-					<span style="margin-left:1px;">Matières</span>
-				</a>
-			</li>
-			<li>
-				<a href="#">
-					<i class="fa fa-comment-o" aria-hidden="true"> </i>
-					<span style="margin-left:1px;">Notes</span>
-				</a>
-			</li>
-			<li>
-				<a href="register.html">
-					<i class="fa fa-book" aria-hidden="true"> </i>
-					<span style="margin-left:1px;">Registration</span>
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
+<!-- Sidebar included here -->
+<div id="includedContent"></div>
 <!-- /#sidebar-wrapper -->
 <div class="container">
 	<div class="homecontainer w-100">
@@ -140,17 +95,6 @@
 						<th scope="row">
 							<input type="checkbox" name="aggree" value="1">
 						</th>
-						<td>Giacomo Guilizzo</td>
-						<td>20/04/1987</td>
-						<td>30</td>
-						<td>Responsable de élève</td>
-						<td>File</td>
-						<td>Coran Niv1</td>
-					</tr>
-					<tr class="content">
-						<th scope="row">
-							<input type="checkbox" name="aggree" value="1">
-						</th>
 						<td>Marco Botton Soufi</td>
 						<td>25/12/2010</td>
 						<td>7</td>
@@ -177,7 +121,7 @@
 						<td>27/11/1980</td>
 						<td>37</td>
 						<td>Enseignant</td>
-						<td>Garçcon</td>
+						<td>Garçon</td>
 						<td>Coran Niv2</td>
 					</tr>
 				</tbody>
@@ -193,21 +137,22 @@
 					<option value="4">Notification d'absence</option>
 				</select>
 				<button type="submit" class="btn btn-primary">GO <span class="fa fa-paper-plane"></span></button>
-				
 			</form>
+			
 		</div>
 		</div>
 	</div>
 </div>
 <!-- /#wrapper -->
-<script src="js/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
-<script>
-	$("#menu-toggle").click(function (e) {
-		e.preventDefault();
-		$("#wrapper").toggleClass("toggled");
-	});
 
+<script src="../js/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script>
+	$(function(){
+      $("#includedContent").load("sidebar.html");
+    });
+ 
+	
 	function filterText() {
 			var rex = new RegExp($('#filterText').val());
 			if (rex == "/all/") { clearFilter() } else {
@@ -231,6 +176,7 @@
 			$('.filterText').val('');
 			$('.content').show();
 		}
+	
 </script>
 <!-- /#End of wrapper -->
 </body>
