@@ -1,0 +1,25 @@
+{
+  "name": "ecolecmi",
+  "version": "1.0.0",
+  "description": "Just an html and bootstrap design to create the school management system in french.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alihasana/ecoleCMI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alihasana/ecoleCMI/issues"
+  },
+  "homepage": "https://github.com/alihasana/ecoleCMI#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}

@@ -14,14 +14,14 @@
 		<!-- Bootstrap CSS and JS -->
 
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="../css/my-login.css">
 		<link rel="stylesheet" href="../css/navbar.css">
 		<link rel="stylesheet" href="../css/custom.css">
 
 
 		<!-- Fonts -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href='../node_modules/font-awesome/css/font-awesome.min.css'>
 
 	</head>
 
@@ -34,19 +34,19 @@
 				<form>
 					<div class="form-row">
 						<div class="col-md-4 mb-3">
-						  <label for="" class="sr-only">Status</label>
-						  <select class="form-control is-valid" placeholder="Status"  value="default" >
-									<option disabled selected>Status</option>
+						  <label for="" class="sr-only">Statut</label>
+						  <select class="form-control is-valid" placeholder="Statut"  value="default" >
+									<option disabled selected>Statut</option>
 									<option>Actif</option>
 									<option>Inactif</option>
 								</select>
 						  <div class="has-feedback">
-						    Selectionnez le status
+						    Selectionnez le statut
 						  </div>
 						</div>
 						<div class="col-md-3 mb-3">
 						  <label for="" class="sr-only">Classe</label>
-						  <select class="form-control is-valid" placeholder="Status"  value="default" >
+						  <select class="form-control is-valid" placeholder="Statut"  value="default" >
 									<option disabled selected>Classe</option>
 									<option value='Coran Niv1'>Coran Niv1</option>
 									<option value='Arabe Rawdati'>Arabe Rawdati</option>
@@ -58,14 +58,14 @@
 						</div>
 						<div class="col-md-4 mb-3">
 						  <label for="" class="sr-only">Responsable</label>
-						  <select class="form-control is-valid" placeholder="Status"  value="default" >
+						  <select class="form-control is-valid" placeholder="Statut"  value="default" >
 									<option disabled selected>Responsable</option>
 									<option value='Coran Niv1'>Amine AGGOUN</option>
 									<option value='Arabe Rawdati'>Ramadan</option>
 									<option value='Coran Niv2'>Tariq</option>
 							</select>
 						  <div class="has-feedback">
-						    Selectionnez le nom de responsable
+						    Selectionnez le Nom du responsable
 						  </div>
 						</div>
 					</div>
@@ -74,81 +74,83 @@
 						  <label for="" class="sr-only">Nom</label>
 						  <input type="text" class="form-control is-valid" placeholder="Nom"  value="default">
 						  <div class="has-feedback">
-						    Entez de Nom
+						   Entrez le Nom
 						  </div>
 						</div>
 						<div class="col-md-3 mb-3">
 						  <label for="" class="sr-only">Prénom</label>
 						  <input type="text" class="form-control is-valid" id="" placeholder="Prénom"   value="default">
 						  <div class="has-feedback">
-						    Entez de Prénom
+						   Entrez le Prénom
 						  </div>
 						</div>
 						<div class="col-md-4 mb-3">
 						  <label for="" class="sr-only">Date de naissance</label>
 						  <input type="date" class="form-control is-valid" id="" placeholder="Date de naissance"   value="default">
 						  <div class="has-feedback">
-						    Entez de Date de Naissance
+						   Entrez la Date de Naissance
 						  </div>
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="col-md-4 mb-3">
-						  <label for="" class="sr-only">Sex</label>
-						  <input type="text" class="form-control is-valid" placeholder="Sex"  value="default">
+						  <label for="" class="sr-only">Genre</label>
+						  <input type="text" class="form-control is-valid" placeholder="Sex"  value="default" disabled>
 						  <div class="has-feedback">
-						    Entez de Sex
+						   Entrez le Genre 
 						  </div>
 						</div>
 						<div class="col-md-4 mb-3">
 						  <label for="" class="sr-only">Mobile</label>
-						  <input type="tel" class="form-control is-valid" id="" placeholder="Mobile"   value="06 35 00 00 01">
+						  <input type="tel" class="form-control is-valid" id="txt_name" placeholder="Mobile"   value="06 35 00 00 01">
 						  <div class="has-feedback">
-						    Entez de Numero portable
+						   Entrez le Numéro de portable
 						  </div>
 						</div>
 						<div class="col-md-3 mb-3">
-						  <label for="" class="sr-only">Télèphone</label>
+						  <label for="" class="sr-only">Téléphone</label>
 						  <input type="tel" class="form-control is-valid" id="" placeholder="Télèphone"   value="01 89 89 89 09">
 						  <div class="has-feedback">
-						    Entez de Numero de Télèphone
+						   Entrez le Numéro de Téléphone
 						  </div>
 						</div>
 					</div>
 					<div class="form-row">
-						<div class="col-md-11 mb-12">
+						<div class="col-md-5 mb-12">
 						  <label for="" class="sr-only">Email</label>
 						  <input type="email" class="form-control is-valid" id="" placeholder="l'Adress Email"  value="default@default.com">
 						  <div class="has-feedback">
-						    Entez de valid Email.
+						   Entrez un Email valide.
 						  </div>
-						</div>
-					</div>
-					<div class="form-row">
-						<div class="col-md-4 mb-3">
+						  </div>
+						  <div class="col-md-6 mb-3">
 						  <label for="" class="sr-only">Adress</label>
 						  <input type="text" class="form-control is-valid" id="" placeholder="Adress"  value="default defult1 default default">
 						  <div class="has-feedback">
-						    Entez de valid Adress.
+						   Entrez une Adresse valide .
 						  </div>
 						</div>
-						<div class="col-md-3 mb-3">
-						  <label for="" class="sr-only">Code postale</label>
+						
+					</div>
+					<div class="form-row">
+						<div class="col-md-4 mb-3">
+						  <label for="" class="sr-only">Code postal</label>
 						  <input type="text" pattern="[0-9]{5}" class="form-control is-valid" id="" placeholder="code postale"  value="75000">
 						  <div class="has-feedback">
-						    Entez de valid code postale
+						   Entrez un code postal valide
 						  </div>
 						</div>
-						<div class="col-md-4 mb-3">
+						<div class="col-md-7 mb-3">
 						  <label for="" class="sr-only">Ville</label>
 						  <input type="text" class="form-control is-valid" id="" placeholder="Ville"  value="default" >
 						  <div class="has-feedback">
-						   Entez de Ville.
+						  Entrez la Ville.
 						  </div>
 						</div>
 					</div>
 					<div align="right">
-						<button  class="btn btn-primary"><i class="fa fa-pencil"></i>  Edit</button>
+						<button  class="btn btn-primary"><i class="fa fa-pencil"></i> 
+						 Modifier</button>
 					</div>
 				</form>
 		</div>
@@ -162,7 +164,7 @@
 							<th scope="col">Bulletin <i class="fa fa-sort-asc"></i></th>
 							<th scope="col">Année Scolaire <i class="fa fa-sort"></i></th>
 							<th scope="col">Trimestre <i class="fa fa-sort"></i></th>
-							<th scope="col">Status <i class="fa fa-sort-desc"></i></th>
+							<th scope="col">Statut <i class="fa fa-sort-desc"></i></th>
 							<th scope="col">Date </th>
 							<th scope="col">Action</th>
 						</tr>
@@ -215,7 +217,7 @@
 						
 					</tbody>
 					<div>
-						<button class="btn btn-primary"><i class="fa fa-calendar-plus-o"></i>  Add Absent</button>
+						<button class="btn btn-primary"><i class="fa fa-calendar-plus-o"></i>  Ajouter un Absent(e)</button>
 					</div>
 				</table>
 				
@@ -226,7 +228,7 @@
 							<th scope="col">Classe	 <i class="fa fa-sort-asc"></i></th>
 							<th scope="col">Année Scolaire <i class="fa fa-sort"></i></th>
 							<th scope="col">Date Inscription <i class="fa fa-sort"></i></th>
-							<th scope="col">Status <i class="fa fa-sort-desc"></i></th>
+							<th scope="col">Statut <i class="fa fa-sort-desc"></i></th>
 						</tr>
 					</thead>
 					<tbody id="">
@@ -252,12 +254,18 @@
 
 		<!-- /#wrapper -->
 
-		<script src="../js/jquery.min.js"></script>
-		<script src="../bootstrap/js/bootstrap.min.js"></script>
-		<script>
+		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="../node_modules/popper.js/dist/popper.min.js"></script><script  type="text/javascript">
 		$(function(){
 		  $("#sidebar").load("sidebar.html");
 		});
+
+		 $(document).ready(function(){
+        $("#txt_name").keyup(function(){
+            alert($(this).val());
+        });
+    })
 		
 		</script>
 		<!-- /#End of wrapper -->

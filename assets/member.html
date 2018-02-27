@@ -14,14 +14,14 @@
 	<!-- Bootstrap CSS and JS -->
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../css/my-login.css">
 	<link rel="stylesheet" href="../css/navbar.css">
 	<link rel="stylesheet" href="../css/custom.css">
 
 
 	 <!-- Fonts -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href='../node_modules/font-awesome/css/font-awesome.min.css'>
 
 	</head>
 
@@ -43,13 +43,44 @@
 					</div>
 				</form>
 			</div>
-			<div class="row justify-content-left" style="padding-left:15px; ">
-				<a href="newStudentRegister.html" role="button" class="btn btn-raised btn-secondary">
-				Un Nouveau
-					<i class="fa fa-user-plus"></i>
-				</a>
-			</div>
+			<!-- <div class="dropdown row justify-content-left" style="padding-left:15px; ">
+				<button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Un Nouveau <i class="fa fa-user-plus"></i>
+				<span class="sr-only">Toggle Dropdown</span>
+				</button>
+					<div class="dropdown-menu">
+					    <a class="dropdown-item" href="newStudentRegister.html">Elève</a>
+					    <div class="dropdown-divider"></div>
+					    <a class="dropdown-item" href="ProfDetail.html">Enseignant</a>
+					    <a class="dropdown-item" href="StudentResponsible.html">Responsable de élève</a>
+					</div>
+				
+			</div> -->
 			
+			<!-- Example split danger button -->
+		<!-- Default dropright button -->
+			<!-- Default dropright button -->
+<div class="btn-group dropright">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropright
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+  </div>
+</div>
+
+<!-- Split dropright button -->
+<div class="btn-group dropright">
+  <button type="button" class="btn btn-secondary">
+    Split dropright
+  </button>
+  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropright</span>
+  </button>
+  <div class="dropdown-menu">
+    <!-- Dropdown menu links -->
+  </div>
+</div>
+				
 			<div class="table-responsive col-10">
 			<div class="row">
 				<table class="table table-striped table-hover table-list-search" id="table_format">
@@ -87,10 +118,10 @@
 							<th scope="row">
 								<input type="checkbox" name="aggree" value="1">						
 							</th>
-							<td><a href="studentdetails.html">Giacomo Guilizzo</i></td>
+							<td>Giacomo Guilizzo</td>
 							<td>20/04/1987</td>
 							<td>30</td>
-							<td>Responsable de élève</td>
+							<td><a href='StudentResponsible.html'>Responsable de élève</a></td>
 							<td>File</td>
 							<td>Coran Niv1</td>
 						</tr>
@@ -98,10 +129,10 @@
 							<th scope="row">
 								<input type="checkbox" name="aggree" value="1">
 							</th>
-							<td><a href="studentdetails.html">Marco Botton Soufi</a></td>
+							<td>Marco Botton Soufi</td>
 							<td>25/12/2010</td>
 							<td>7</td>
-							<td>Elève</td>
+							<td><a href='studentdetails.html'>Elève</a></td>
 							<td>Garcon</td>
 							<td>Arabe Rawdati</td>
 						</tr>
@@ -109,10 +140,10 @@
 							<th scope="row">
 								<input type="checkbox" name="aggree" value="1">
 							</th>
-							<td><a href='studentdetails.html'>Mariah Maclachlan Jana Half</a></td>
+							<td>Mariah Maclachlan Jana Half</td>
 							<td>03/07/2013</td>
 							<td>5</td>
-							<td>Elève</td>
+							<td><a href='studentdetails.html'>Elève</a></td>
 							<td>File</td>
 							<td>Arabe Rawdati</td>
 						</tr>
@@ -120,10 +151,10 @@
 							<th scope="row">
 								<input type="checkbox" name="aggree" value="1">
 							</th>
-							<td><a href="studentdetails.html">Amine AGGOUN</a></td>
+							<td>Amine AGGOUN</td>
 							<td>27/11/1980</td>
 							<td>37</td>
-							<td>Enseignant</td>
+							<td><a href='ProfDetail.html'>Enseignant</a></td>
 							<td>Garçon</td>
 							<td>Coran Niv2</td>
 						</tr>
@@ -148,9 +179,11 @@
 	</div>
 	<!-- /#wrapper -->
 
-	<script src="../js/jquery.min.js"></script>
-	<script src="../bootstrap/js/bootstrap.min.js"></script>
-	<script>
+		
+		<script src="../node_modules/popper.js/dist/popper.min.js"></script>
+		<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+		<script>
 		$(function(){
 	      $("#sidebar").load("sidebar.html");
 	    });
