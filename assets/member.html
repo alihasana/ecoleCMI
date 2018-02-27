@@ -1,0 +1,186 @@
+	<!-- DOCTYPE -->
+	<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+
+	<title>Ecole CMI &mdash; Membres</title>
+	 <!-- Required meta tags always come first -->
+	    <meta charset="utf-8">
+	    <meta name="author" content="alihasana">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+	<!-- Bootstrap CSS and JS -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/my-login.css">
+	<link rel="stylesheet" href="../css/navbar.css">
+	<link rel="stylesheet" href="../css/custom.css">
+
+
+	 <!-- Fonts -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	</head>
+
+	<body>
+	<!-- Sidebar included here -->
+	<div id="sidebar"></div>
+	<!-- /#sidebar-wrapper -->
+	<div class="container" style="">
+		<div class="homecontainer w-100">
+			<div class="row justify-content-left">
+				<form class="form-group col-9" role="search">
+					<div class="input-group add-on">
+						<input type="text" class="form-control" placeholder="Je cherche quelqu'un.." name="studentsearch" >
+						<div class="input-group-btn">
+							<button class="btn btn-default" type="submit">
+								<i class="fa fa-search"></i>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="row justify-content-left" style="padding-left:15px; ">
+				<a href="newStudentRegister.html" role="button" class="btn btn-raised btn-secondary">
+				Un Nouveau
+					<i class="fa fa-user-plus"></i>
+				</a>
+			</div>
+			
+			<div class="table-responsive col-10">
+			<div class="row">
+				<table class="table table-striped table-hover table-list-search" id="table_format">
+					<thead class="thead-light">
+						<tr class="text-center">
+							<th scope="col">Select</th>
+							<th scope="col">Nom Prénom</th>
+							<th scope="col">Date de naissance</th>
+							<th scope="col">Age</th>
+							<th scope="col">
+								<select id='filterText' style='display:inline-block' onchange='filterText()'>
+									<option disabled selected>Role</option>
+									<option value='Responsable de élève'>Responsable de élève</option>
+									<option value='Elève'>Elève</option>
+									<option value='Enseignant'>Enseignant</option>
+									<option value='all'>Tout</option>
+								</select>
+								</th>
+							</th>
+							<th scope="col">Sex</th>
+							<th scope="col">
+								<select id='filterText1' style='display:inline-block' onchange='filterText1()'>
+									<option disabled selected>Classe</option>
+									<option value='Coran Niv1'>Coran Niv1</option>
+									<option value='Arabe Rawdati'>Arabe Rawdati</option>
+									<option value='Coran Niv2'>Coran Niv2</option>
+									<option value='all'>Tout</option>
+								</select>
+								</th>
+							</th>
+						</tr>
+					</thead>
+					<tbody id="myTable">
+						<tr class="content">
+							<th scope="row">
+								<input type="checkbox" name="aggree" value="1">						
+							</th>
+							<td><a href="studentdetails.html">Giacomo Guilizzo</i></td>
+							<td>20/04/1987</td>
+							<td>30</td>
+							<td>Responsable de élève</td>
+							<td>File</td>
+							<td>Coran Niv1</td>
+						</tr>
+						<tr class="content">
+							<th scope="row">
+								<input type="checkbox" name="aggree" value="1">
+							</th>
+							<td><a href="studentdetails.html">Marco Botton Soufi</a></td>
+							<td>25/12/2010</td>
+							<td>7</td>
+							<td>Elève</td>
+							<td>Garcon</td>
+							<td>Arabe Rawdati</td>
+						</tr>
+						<tr class="content">
+							<th scope="row">
+								<input type="checkbox" name="aggree" value="1">
+							</th>
+							<td><a href='studentdetails.html'>Mariah Maclachlan Jana Half</a></td>
+							<td>03/07/2013</td>
+							<td>5</td>
+							<td>Elève</td>
+							<td>File</td>
+							<td>Arabe Rawdati</td>
+						</tr>
+						<tr class="content">
+							<th scope="row">
+								<input type="checkbox" name="aggree" value="1">
+							</th>
+							<td><a href="studentdetails.html">Amine AGGOUN</a></td>
+							<td>27/11/1980</td>
+							<td>37</td>
+							<td>Enseignant</td>
+							<td>Garçon</td>
+							<td>Coran Niv2</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<form class="form-check-inline">
+					<label class="mr-sm-2" for="inlineFormCustomSelect"></label>
+					<select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+						<option selected>Editer et envoyer bullentins</option>
+						<option value="1">Editer les bullentins</option>
+						<option value="2">Envoyer Mail</option>
+						<option value="3">Envoyer SMS</option>
+						<option value="4">Notification d'absence</option>
+					</select>
+					<button type="submit" class="btn btn-primary">GO <span class="fa fa-paper-plane"></span></button>
+				</form>
+				
+			</div>
+			</div>
+		</div>
+	</div>
+	<!-- /#wrapper -->
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script>
+		$(function(){
+	      $("#sidebar").load("sidebar.html");
+	    });
+	 
+		
+		function filterText() {
+				var rex = new RegExp($('#filterText').val());
+				if (rex == "/all/") { clearFilter() } else {
+					$('.content').hide();
+					$('.content').filter(function () {
+						return rex.test($(this).text());
+					}).show();
+				}
+			}
+		function filterText1() {
+				var rex = new RegExp($('#filterText1').val());
+				if (rex == "/all/") { clearFilter() } else {
+					$('.content').hide();
+					$('.content').filter(function () {
+						return rex.test($(this).text());
+					}).show();
+				}
+			}
+
+		function clearFilter() {
+				$('.filterText').val('');
+				$('.content').show();
+			}
+		
+	</script>
+	<!-- /#End of wrapper -->
+	</body>
+	</html>
