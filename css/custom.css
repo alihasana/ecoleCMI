@@ -9,8 +9,9 @@
 
 .ins-container{
     position: relative;
+    padding-left: 30px;
     top: 25px;
-    left: 45px;
+    left: 35px;
     justify-content: space-around;
 }
 
@@ -28,10 +29,12 @@
     left: 80px;
     justify-content: space-around;
 }
-    /*.tableleftpadding{
-        position: absolute;
-        padding-left: 20px;
-    }*/
+    .ins-container{
+    position: relative;
+    top: 25px;
+    left: 45px;
+    justify-content: space-around;
+}
 }
 
 @media screen and (max-width: 320px) {
