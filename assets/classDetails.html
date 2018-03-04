@@ -1,0 +1,169 @@
+		<!-- DOCTYPE -->
+	<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+
+		<title>Ecole CMI &mdash; Détails Classe</title>
+		<!-- meta tags always come first -->
+		<meta charset="utf-8">
+		<meta name="author" content="alihasana">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+		<!-- Bootstrap CSS and JS -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/my-login.css">
+		<link rel="stylesheet" href="../css/navbar.css">
+		<link rel="stylesheet" href="../css/custom.css">
+
+
+		<!-- Fonts -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<!-- Sidebar included here -->
+		<div id="sidebar"></div>
+		<!-- /#sidebar-wrapper -->
+		<div class="container ins-container col-10" >
+			<h4 class="text-center"><u>Détails Classe</u></h4>
+				<form>
+					
+					<div class="form-row">
+						<div class="col-md-4 mb-4">
+						  <label for="" class="sr-only">Code</label>
+						  <input type="text" class="form-control is-valid" placeholder="Code"  value="">
+						</div>
+						<div class="col-md-4 mb-4">
+						  <label for="" class="sr-only">Année</label>
+						  <input type="text" class="form-control is-valid" id="" placeholder="Année"   value="">
+						</div>
+						<div class="col-md-4 mb-4">
+						  <label for="" class="sr-only">Trimsetre</label>
+						  <input type="date" class="form-control is-valid" id="" placeholder="Trimsetre"   value="">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-4 mb-4">
+						  <label for="" class="sr-only">Libellé</label>
+						  <input type="text" class="form-control is-valid" placeholder="Libellé"  value="" disabled>
+						</div>
+						<div class="col-md-4 mb-4">
+						  <label for="" class="sr-only">Niveau</label>
+						  <input type="text" class="form-control is-valid" id="txt_name" placeholder="Niveau"   value="">
+						</div>
+					</div>
+					<div align="right">
+						<button  class="btn btn-primary mb-4"><i class="fa fa-pencil"></i> 
+						 Modifier</button>
+					</div>
+				</form>
+		</div>
+
+		<div class="container ins-container table-responsive col-10">
+			<div class="row text-nowarp">
+				<table class="table table-striped table-hover">
+					<thead class="thead-light ">
+						<tr>
+							<th scope="col">Nom Prénom | Elève <i class="fa fa-sort-asc"></i><br> </th>
+							<th scope="col">Date de Naissance <i class="fa fa-sort"></i></th>
+							<th scope="col">Genre <i class="fa fa-sort-desc"></i></th>
+							<th scope="col">Supprimer</i></th>
+						</tr>
+					</thead>
+					<tbody id="">
+						<tr class="content">						
+							<th>Jona AGGOUN</th>
+							<td>30/01/2007</td>
+							<td>Fille</td>
+							<td><i class="fa fa-trash"></i></td>
+						</tr>
+						<tr class="content">						
+							<th>Sofi AGGOUN</th>
+							<td>25/12/2010</td>
+							<td>Garçon</td>
+							<td>
+								<i class="fa fa-trash"></i>
+							</td>
+						</tr>
+					</tbody>
+				</table>				
+			</div>
+			
+			<div align="right" class="mb-4">
+				<button type="button" class="btn btn-primary"><i class="fa fa-plus"></i>  Ajoutez un élève</button>
+			</div>
+		</div>
+		
+		<div class="container ins-container table-responsive col-10">
+			<div class="row text-nowarp">
+				<table class="table table-striped table-hover">
+					<thead class="thead-light ">
+						<tr>
+							<th scope="col">Matière
+								<i class="fa fa-sort-asc"></i>
+								<br> </th>
+							<th scope="col">Date d'ajout
+								<i class="fa fa-sort"></i>
+							</th>
+							<th scope="col">Coefficient
+							</th>
+							<th scope="col">Statut</i>
+								<i class="fa fa-sort-desc"></i>
+							</th>
+							<th scope="col">Modifier/Supp
+							</th>
+						</tr>
+					</thead>
+					<tbody id="">
+						<tr class="content">
+							<th>Coran</th>
+							<td>30/01/2007</td>
+							<td>1</td>
+							<td>Active</td>
+							<td>>></td>							
+						</tr>
+						<tr class="content">
+							<th>Arabe</th>
+							<td>25/12/2007</td>
+							<td>1</td>
+							<td>Active</td>
+							<td>>></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div align="right">
+				<button type="button" class="btn btn-primary">
+					<i class="fa fa-plus"></i> Ajoutez une matière</button>
+			</div>
+
+		</div>
+
+		<!-- /#wrapper -->
+		<script src="https://maxcdn.bootstrapcdn.combootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script
+  		src="https://code.jquery.com/jquery-3.3.1.min.js"
+  		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  		crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+		<script  type="text/javascript">
+		$(function(){
+		  $("#sidebar").load("./sidebar.html");
+		});
+
+		 $(document).ready(function(){
+        $("#txt_name").keyup(function(){
+            alert($(this).val());
+        });
+    })
+		
+		</script>
+		<!-- /#End of wrapper -->
+	</body>
+	</html>

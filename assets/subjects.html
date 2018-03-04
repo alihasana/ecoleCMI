@@ -3,7 +3,7 @@
 	<html lang="fr">
 	<head>
 
-	<title>Ecole CMI &mdash; Inscriptions</title>
+	<title>Ecole CMI &mdash; Matières</title>
 	 <!-- Required meta tags always come first -->
 	    <meta charset="utf-8">
 	    <meta name="author" content="alihasana">
@@ -29,8 +29,13 @@
 	<!-- Sidebar included here -->
 	<div id="sidebar"></div>
 	<!-- /#sidebar-wrapper -->
-	<div class="container" style="">
+
+
+	<div class="container" style="padding-top: 20px;">
+		<h4 class="text-center mb-5 form-control" style="background-color:lightgray;"><strong>Détails Matière</strong></h4>
+
 		<div class="homecontainer w-100">
+				
 			<div class="row">
 				<form class="form-group col-9 col-lg-10 col-sm-9 col-md-11 col-xl-11" role="search">
 					<div class="input-group add-on">
@@ -45,7 +50,7 @@
 			</div>
 			<div class="row">
 					<div class="dropdown justify-content-left mb-3"  style="padding-left:15px; ">
-					<a href="./incriptionDetails.html">
+					<a href="./subjectsDetails.html">
 						<button type="button"  class="btn btn-secondary" > Un Nouveau <i class="fa fa-user-plus"></i>
 						</button>
 					</a>
@@ -56,86 +61,35 @@
 				<table class="col table table-striped table-hover table-list-search" id="table_format">
 					<thead class="thead-light">
 						<tr class="align-text-bottom">
-							<th class="text-nowrap" scope="col"><input  type="checkbox" name="aggree" value="1"> Select All</th>
-							<th class="text-nowrap" scope="col">Nom Responsable</th>
 							<th class="text-nowrap" scope="col">Code</th>
-							<th class="text-nowrap" scope="col">Année Scolaire</th>
-							<th scope="col">
-								<select id='filterText' style='display:inline-block' onchange='filterText()'>
-									<option disabled selected>Statut</option>
-									<option value='Validée'>Validée</option>
-									<option value='Attente Paiement'>Attente Paiement</option>
-									<option value='Attente Document'>Attente Document</option>
-									<option value='Terminée'>Terminée</option>
-									<option value='all'>Tout</option>
-								</select>
-								</th>
-							</th>
-							<th scope="col">Type <i class="fa fa-sort-desc"></i>
-							</th></th>
-							<th class="text-nowrap" scope="col">Date Inscriptions</th>
-							
+							<th class="text-nowrap" scope="col">Matière <i class="fa fa-sort-asc"></i></th>
+							<th class="text-nowrap" scope="col">Date d'ajout <i class="fa fa-sort"></i></th>
+							<th class="text-nowrap" scope="col">Coefficient</th>
+							<th scope="col">Statut <i class="fa fa-sort-desc"></i></th>
+							<th class="text-nowrap" scope="col">Modifier/Supp</th>
 						</tr>
 					</thead>
 					<tbody id="myTable">
 						<tr class="content">
-							<th scope="row">
-								<input type="checkbox" name="aggree" value="1">						
-							</th>
-							<td>Giacomo Guilizzo</td>
-							<td>1718GUI</td>
-							<td>2017/2018</td>
-							<td>Validée</td>
-							<td>Famille</td>
-							<td>21/09/2017</td>
-
+							<td>CAR17181</td>
+							<td>Coran</td>
+							<td>20/04/2017</td>
+							<td>1</td>
+							<td>Active</td>
+							<td>>></td>
 						</tr>
 						<tr class="content">
-							<th scope="row">
-								<input type="checkbox" name="aggree" value="1">
-							</th>
-							<td>Marco Botton Soufi</td>
-							<td>1718MAB</td>
-							<td>2017/2018</td>
-							<td>Attente Paiement</td>
-							<td>Seul</td>	
-							<td>21/09/2017</td>
-
-						</tr>
-						<tr class="content">
-							<th scope="row">
-								<input type="checkbox" name="aggree" value="1">
-							</th>
-							<td>Mariah Maclachlan Jana Half</td>
-							<td>1718MMJ</td>
-							<td>2017/2018</td>
-							<td>Attente Document</td>
-							<td>Famille</td>
-							<td>22/09/2017</td>
-						</tr>
-						<tr class="content">
-							<th scope="row">
-								<input type="checkbox" name="aggree" value="1">
-							</th>
-							<td>Amine AGGOUN</td>
-							<td>1617AGO</td>
-							<td>2016/2017</td>
-							<td>Terminée</td>
-							<td>Famille</td>
-							<td>01/09/2016</td>
+							<td>CAR17181</td>
+							<td>Arabe</td>
+							<td>25/12/2017</td>
+							<td>1</td>
+							<td>Active</td>
+							<td>>></td>
 						</tr>
 					</tbody>
 				</table>				
 			</div>
 			</div>
-			<form class="form-check-inline">
-					<label class="mr-sm-2" for="inlineFormCustomSelect"></label>
-					<select class="custom-select col-7" id="inlineFormCustomSelect">
-						<option selected>Envoyer Factures</option>
-						<option value="1">Envoyer une relance documents</option>
-					</select>
-					<button type="submit" class="btn btn-primary col-3">GO <span class="fa fa-paper-plane"></span></button>
-				</form>
 		</div>
 	</div>
 	<!-- /#wrapper -->

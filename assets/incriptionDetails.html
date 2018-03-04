@@ -1,0 +1,198 @@
+		<!-- DOCTYPE -->
+	<!DOCTYPE html>
+	<html lang="fr">
+	<head>
+
+		<title>Ecole CMI &mdash; Détails Inscription</title>
+		<!-- meta tags always come first -->
+		<meta charset="utf-8">
+		<meta name="author" content="alihasana">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+
+		<!-- Bootstrap CSS and JS -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/my-login.css">
+		<link rel="stylesheet" href="../css/navbar.css">
+		<link rel="stylesheet" href="../css/custom.css">
+
+
+		<!-- Fonts -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<!-- Sidebar included here -->
+		<div id="sidebar"></div>
+		<!-- /#sidebar-wrapper -->
+		<div class="container ins-container col-10" >
+			<h4 class="text-center"><u>Détails Inscription</u></h4>
+				<form>
+					
+					<div class="form-row">
+						<div class="col-md-4 mb-4">
+						  <label for="" class="sr-only">Liebellé</label>
+						  <input type="text" class="form-control is-valid" placeholder="Liebellé"  value="">
+						</div>
+						<div class="col-md-4 mb-4">
+						  <label for="" class="sr-only">Responsable</label>
+						  <input type="text" class="form-control is-valid" id="" placeholder="Responsable"   value="">
+						</div>
+						<div class="col-md-4 mb-4">
+						  <label for="" class="sr-only">Date de Inscription</label>
+						  <input type="date" class="form-control is-valid" id="" placeholder="Date de Inscription"   value="">
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-4 mb-4">
+						  <label for="" class="sr-only">Année</label>
+						  <input type="text" class="form-control is-valid" placeholder="Année"  value="" disabled>
+						</div>
+						<div class="col-md-4 mb-4">
+						  <label for="" class="sr-only">Type</label>
+						  <input type="text" class="form-control is-valid" id="txt_name" placeholder="Type"   value="">
+						</div>
+						<div class="col-md-4 mb-4">
+							<label for="" class="sr-only">Statut</label>
+							<select class="form-control is-valid" placeholder="Statut" value="">
+								<option disabled selected>Statut</option>
+								<option>Actif</option>
+								<option>Inactif</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="col-md-3  mb-4">
+						  <label for="" class="sr-only">Date de validation</label>
+						  <input type="date" class="form-control is-valid" id="" placeholder="Date de validation"  value="">
+						  </div>
+						  <div class="col-md-3  mb-4">
+						  <label for="" class="sr-only">Code</label>
+						  <input type="text" class="form-control is-valid" id="" placeholder="Code"  value="">
+						</div>
+						<div class="col-md-6  mb-4">
+							<label for="" class="sr-only">Commentaire</label>
+							<textarea class="form-control is-valid" name="" id="" rows="1" placeholder="Commentaire"></textarea>
+						</div>
+					</div>
+					<div align="right">
+						<button  class="btn btn-primary mb-4"><i class="fa fa-pencil"></i> 
+						 Modifier</button>
+					</div>
+				</form>
+		</div>
+
+		<div class="container ins-container table-responsive col-10">
+			<div class="row text-nowarp">
+				<table class="table table-striped table-hover">
+					<thead class="thead-light ">
+						<tr>
+							<th scope="col">Nom Prénom | Elève <i class="fa fa-sort-asc"></i><br> </th>
+							<th scope="col">Date de Naissance <i class="fa fa-sort"></i></th>
+							<th scope="col">Genre <i class="fa fa-sort-desc"></i></th>
+							<th scope="col">Supprimer</i></th>
+						</tr>
+					</thead>
+					<tbody id="">
+						<tr class="content">						
+							<th>Jona AGGOUN</th>
+							<td>30/01/2007</td>
+							<td>Fille</td>
+							<td><i class="fa fa-trash"></i></td>
+						</tr>
+						<tr class="content">						
+							<th>Sofi AGGOUN</th>
+							<td>25/12/2010</td>
+							<td>Garçon</td>
+							<td>
+								<i class="fa fa-trash"></i>
+							</td>
+						</tr>
+					</tbody>
+				</table>				
+			</div>
+			
+			<div align="right" class="mb-4">
+				<button type="button" class="btn btn-primary"><i class="fa fa-plus"></i>  Ajoutez un élève</button>
+			</div>
+		</div>
+		
+		<div class="container ins-container table-responsive col-10">
+			<div class="row text-nowarp">
+				<table class="table table-striped table-hover">
+					<thead class="thead-light ">
+						<tr>
+							<th scope="col">Paiement
+								<i class="fa fa-sort-asc"></i>
+								<br> </th>
+							<th scope="col">Date de Paiement
+								<i class="fa fa-sort"></i>
+							</th>
+							<th scope="col">Montant
+							</th>
+							<th scope="col">Mode</i>
+								<i class="fa fa-sort-desc"></i>
+							</th>
+							<th scope="col">Reste à payer
+							</th>
+							<th scope="col">Commentaire
+							</th>
+						</tr>
+					</thead>
+					<tbody id="">
+						<tr class="content">
+							<th>1</th>
+							<td>30/01/2007</td>
+							<td>150 €</td>
+							<td>Chèque</td>
+							<td>50 €</td>
+							<td>RAS</td>
+							
+						</tr>
+						<tr class="content">
+							<th>2</th>
+							<td>25/12/2007</td>
+							<td>150 €</td>
+							<td>CB</td>
+							<td>150 €</td>
+							<td>RAS</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div align="right">
+				<button class="btn btn-secondary">
+				<i class="fa fa-print"></i> Imprimé</button>
+				<button type="button" class="btn btn-primary">
+					<i class="fa fa-plus"></i> Ajoutez un élève</button>
+			</div>
+
+		</div>
+
+		<!-- /#wrapper -->
+		<script src="https://maxcdn.bootstrapcdn.combootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script
+  		src="https://code.jquery.com/jquery-3.3.1.min.js"
+  		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  		crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+		<script  type="text/javascript">
+		$(function(){
+		  $("#sidebar").load("./sidebar.html");
+		});
+
+		 $(document).ready(function(){
+        $("#txt_name").keyup(function(){
+            alert($(this).val());
+        });
+    })
+		
+		</script>
+		<!-- /#End of wrapper -->
+	</body>
+	</html>
