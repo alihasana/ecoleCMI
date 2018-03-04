@@ -3,7 +3,7 @@
 	<html lang="fr">
 	<head>
 
-	<title>Ecole CMI &mdash; Membres</title>
+	<title>Ecole CMI &mdash; Inscriptions</title>
 	 <!-- Required meta tags always come first -->
 	    <meta charset="utf-8">
 	    <meta name="author" content="alihasana">
@@ -57,37 +57,30 @@
 			</div>
 			
 
-			<div class="table-responsive col-11">
+			<div class="table-responsive col-11 text-center">
 			<div class="row">
 				<table class="col table table-striped table-hover table-list-search" id="table_format">
 					<thead class="thead-light">
 						<tr class="align-text-bottom">
 							<th class="text-nowrap" scope="col"><input  type="checkbox" name="aggree" value="1"> Select All</th>
-							<th class="text-nowrap" scope="col">Nom Prénom</th>
-							<th class="text-nowrap" scope="col">Date de naissance</th>
-							<th scope="col">Age</th>
+							<th class="text-nowrap" scope="col">Nom Responsable</th>
+							<th class="text-nowrap" scope="col">Code</th>
+							<th class="text-nowrap" scope="col">Année Scolaire</th>
 							<th scope="col">
 								<select id='filterText' style='display:inline-block' onchange='filterText()'>
-									<option disabled selected>Role</option>
-									<option value='Responsable de élève'>Responsable de élève</option>
-									<option value='Elève'>Elève</option>
-									<option value='Enseignant'>Enseignant</option>
+									<option disabled selected>Statut</option>
+									<option value='Validée'>Validée</option>
+									<option value='Attente Paiement'>Attente Paiement</option>
+									<option value='Attente Document'>Attente Document</option>
+									<option value='Terminée'>Terminée</option>
 									<option value='all'>Tout</option>
 								</select>
 								</th>
 							</th>
-							<th scope="col">Genre</th>
-							<th scope="col">
-								<select id='filterText1' style='display:inline-block' onchange='filterText1()'>
-									<option disabled selected>Classe</option>
-									<option value='Coran Niv1'>Coran Niv1</option>
-									<option value='Arabe Rawdati'>Arabe Rawdati</option>
-									<option value='Coran Niv2'>Coran Niv2</option>
-									<option value='all'>Tout</option>
-								</select>
-								</th>
-							</th>
-							<th scope="col">Statut</th>
+							<th scope="col">Type <i class="fa fa-sort-desc"></i>
+							</th></th>
+							<th class="text-nowrap" scope="col">Date Inscriptions</th>
+							
 						</tr>
 					</thead>
 					<tbody id="myTable">
@@ -96,12 +89,11 @@
 								<input type="checkbox" name="aggree" value="1">						
 							</th>
 							<td>Giacomo Guilizzo</td>
-							<td>20/04/1987</td>
-							<td>30</td>
-							<td><a href='StudentResponsible.html'>Responsable de élève</a></td>
-							<td>File</td>
-							<td>Coran Niv1</td>
-							<td>Actif</td>
+							<td>1718GUI</td>
+							<td>2017/2018</td>
+							<td>Validée</td>
+							<td>Famille</td>
+							<td>21/09/2017</td>
 
 						</tr>
 						<tr class="content">
@@ -109,12 +101,11 @@
 								<input type="checkbox" name="aggree" value="1">
 							</th>
 							<td>Marco Botton Soufi</td>
-							<td>25/12/2010</td>
-							<td>7</td>
-							<td><a href='studentdetails.html'>Elève</a></td>
-							<td>Garcon</td>
-							<td>Arabe Rawdati</td>
-							<td>Actif</td>
+							<td>1718MAB</td>
+							<td>2017/2018</td>
+							<td>Attente Paiement</td>
+							<td>Seul</td>	
+							<td>21/09/2017</td>
 
 						</tr>
 						<tr class="content">
@@ -122,24 +113,22 @@
 								<input type="checkbox" name="aggree" value="1">
 							</th>
 							<td>Mariah Maclachlan Jana Half</td>
-							<td>03/07/2013</td>
-							<td>5</td>
-							<td><a href='studentdetails.html'>Elève</a></td>
-							<td>File</td>
-							<td>Arabe Rawdati</td>
-							<td>Actif</td>
+							<td>1718MMJ</td>
+							<td>2017/2018</td>
+							<td>Attente Document</td>
+							<td>Famille</td>
+							<td>22/09/2017</td>
 						</tr>
 						<tr class="content">
 							<th scope="row">
 								<input type="checkbox" name="aggree" value="1">
 							</th>
 							<td>Amine AGGOUN</td>
-							<td>27/11/1980</td>
-							<td>37</td>
-							<td><a href='ProfDetail.html'>Enseignant</a></td>
-							<td>Garçon</td>
-							<td>Coran Niv2</td>
-							<td>Actif</td>
+							<td>1617AGO</td>
+							<td>2016/2017</td>
+							<td>Terminée</td>
+							<td>Famille</td>
+							<td>01/09/2016</td>
 						</tr>
 					</tbody>
 				</table>				
@@ -148,11 +137,8 @@
 			<form class="form-check-inline">
 					<label class="mr-sm-2" for="inlineFormCustomSelect"></label>
 					<select class="custom-select col-7" id="inlineFormCustomSelect">
-						<option selected>Editer et envoyer bullentins</option>
-						<option value="1">Editer les bullentins</option>
-						<option value="2">Envoyer Mail</option>
-						<option value="3">Envoyer SMS</option>
-						<option value="4">Notification d'absence</option>
+						<option selected>Envoyer Factures</option>
+						<option value="1">Envoyer une relance documents</option>
 					</select>
 					<button type="submit" class="btn btn-primary col-3">GO <span class="fa fa-paper-plane"></span></button>
 				</form>
