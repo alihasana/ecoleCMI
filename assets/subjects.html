@@ -54,46 +54,99 @@
 						<button type="button"  class="btn btn-secondary" > Un Nouveau <i class="fa fa-user-plus"></i>
 						</button>
 					</a>
-			</div>				
+			</div>
+						
+			<div class="col-12">
+				<div class="table-responsive">
+				<div>
+					<table class="col table table-striped table-hover table-list-search" id="table_format">
+						<thead class="thead-light">
+							<tr class="align-text-bottom">
+								<th class="text-nowrap" scope="col">Code</th>
+								<th class="text-nowrap" scope="col">Matière <i class="fa fa-sort-asc"></i></th>
+								<th class="text-nowrap" scope="col">Date d'ajout <i class="fa fa-sort"></i></th>
+								<th class="text-nowrap" scope="col">Coefficient</th>
+								<th scope="col">Statut <i class="fa fa-sort-desc"></i></th>
+								<th class="text-nowrap" scope="col">Modifier/Supp</th>
+							</tr>
+						</thead>
+						<tbody id="myTable">
+							<tr class="content">
+								<td>CAR17181</td>
+								<td>Coran</td>
+								<td>20/04/2017</td>
+								<td>1</td>
+								<td>Active</td>
+								<td>>></td>
+							</tr>
+							<tr class="content">
+								<td>CAR17181</td>
+								<td>Arabe</td>
+								<td>25/12/2017</td>
+								<td>1</td>
+								<td>Active</td>
+								<td>>></td>
+							</tr>
+						</tbody>
+					</table>				
+				</div>
+				</div>
 
-			<div class="table-responsive">
-			<div>
-				<table class="col table table-striped table-hover table-list-search" id="table_format">
-					<thead class="thead-light">
-						<tr class="align-text-bottom">
-							<th class="text-nowrap" scope="col">Code</th>
-							<th class="text-nowrap" scope="col">Matière <i class="fa fa-sort-asc"></i></th>
-							<th class="text-nowrap" scope="col">Date d'ajout <i class="fa fa-sort"></i></th>
-							<th class="text-nowrap" scope="col">Coefficient</th>
-							<th scope="col">Statut <i class="fa fa-sort-desc"></i></th>
-							<th class="text-nowrap" scope="col">Modifier/Supp</th>
-						</tr>
-					</thead>
-					<tbody id="myTable">
-						<tr class="content">
-							<td>CAR17181</td>
-							<td>Coran</td>
-							<td>20/04/2017</td>
-							<td>1</td>
-							<td>Active</td>
-							<td>>></td>
-						</tr>
-						<tr class="content">
-							<td>CAR17181</td>
-							<td>Arabe</td>
-							<td>25/12/2017</td>
-							<td>1</td>
-							<td>Active</td>
-							<td>>></td>
-						</tr>
-					</tbody>
-				</table>				
+				<div>
+					<a href="#myModal" class="btn btn-secondary trigger-btn" data-toggle="modal">Détails Matière</a>
+				</div>
+				<div id="myModal" class="modal fade text-center">
+					<div class="modal-dialog">
+						<div class="col-12 main-section">
+							<div class="modal-content">
+								<div class="col-lg-12 col-sm-12 col-12 subject-name">
+									<h6>Détails Matière</h6>
+									<button type="button" class="close" data-dismiss="modal">×</button>
+								</div>
+								<div class="col-lg-12 col-sm-12 col-12 form-input">
+									<form>
+										<div class="form-row">
+											<div class="col-md-5 mb-4">
+												<label for="" class="sr-only">Code</label>
+												<input type="text" class="form-control is-valid" title="Code" data-toggle="tooltip" data-placement="bottom" placeholder="Code">
+											</div>
+											<div class="col-md-7 mb-4">
+												<label for="" class="sr-only">Nom</label>
+												<input type="text" class="form-control is-valid" title="Nom" data-toggle="tooltip" data-placement="bottom" placeholder="Nom">
+											</div>
+										</div>
+										<div class="form-row">
+											<div class="col-md-5 mb-4">
+												<label for="" class="sr-only">Date</label>
+												<input type="date" class="form-control is-valid" title="Date" data-toggle="tooltip" data-placement="bottom" placeholder="Date">
+											</div>
+											<div class="col-md-4 mb-4">
+												<label for="" class="sr-only">Coefficient</label>
+												<input type="text" class="form-control is-valid" title="Coefficient" data-toggle="tooltip" data-placement="bottom"
+												 placeholder="Coefficient">
+											</div>
+										
+											<div class="col-md-3 mb-4">
+												<label for="" class="sr-only">Statut</label>
+												<input type="text" class="form-control is-valid" title="Coefficient" data-toggle="tooltip" data-placement="bottom"
+												 placeholder="Coefficient">
+											</div>
+										</div>
+										<div align="right">
+											<button class="btn btn-primary col-5">
+												<i class="fa fa-pencil"></i>
+												Modifier</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 			</div>
 		</div>
-	</div>
 	
-
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
 	 crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -134,6 +187,28 @@
 			}
 		
 	</script>
-	
+	<style>
+	.main-section{
+		margin: 0 auto;
+		margin-top:100px;
+		background-color: #fff;
+		border-radius: 10px;
+		padding: 0px;
+	}
+
+	.subject-name{
+		margin:10px 0px;
+	}
+	.subject-name button{
+		position: absolute;	
+		top:-50px;
+		right:20px;
+		font-size:30px;
+	}
+	.form-input button{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	</style>	
 	</body>
-	</html>
+	</html>	
