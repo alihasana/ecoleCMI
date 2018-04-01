@@ -1,5 +1,11 @@
-
-
+.heading{
+    background-color: lightgray;
+}
+.headingWithSearchBar{
+    background-color: lightgray;
+    position: relative;
+    top: -10vh;
+}
 .homecontainer{
     position: relative;
     top: 100px;
@@ -9,11 +15,10 @@
 
 .ins-container{
     position: relative;
-    padding-left: 30px;
     top: 25px;
     left: 35px;
     justify-content: space-around;
-}
+}   
 
 .add-on .input-group-btn > .btn {
   border-left-width:0;left:-2px;
@@ -21,18 +26,17 @@
   box-shadow: inset 0 1px 1px #00000013;
 }
 
-
 @media screen and (max-width: 425px)  {
 	.homecontainer{
-    position: absolute;
+    position: relative;
     top: 100px;
-    left: 80px;
+    left: 25px;
     justify-content: space-around;
 }
     .ins-container{
     position: relative;
     top: 25px;
-    left: 45px;
+    left: 20px;
     justify-content: space-around;
 }
 }

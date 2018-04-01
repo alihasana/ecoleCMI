@@ -31,16 +31,16 @@
 	<!-- /#sidebar-wrapper -->
 
 
-	<div class="container" style="padding-top: 20px;">
-		<h4 class="text-center mb-5 form-control" style="background-color:lightgray;"><strong>Détails Matière</strong></h4>
-
+	<div class="container col-10">
 		<div class="homecontainer w-100">
-				
+			<h4 class="text-center w-100 mb-5 form-control-sm headingWithSearchBar">
+				<strong>Matières</strong>
+			</h4>
 			<div class="row">
-				<form class="form-group col-9 col-lg-10 col-sm-9 col-md-11 col-xl-11" role="search">
+				<form class="form-group mt-5 col-12" role="search">
 					<div class="input-group add-on">
 						<input type="text" class="form-control" placeholder="Je cherche quelqu'un.." name="studentsearch" >
-						<div class="input-group-btn">
+						<div class="input-group-append input-group-btn">
 							<button class="btn btn-default" type="submit">
 								<i class="fa fa-search"></i>
 							</button>
@@ -56,8 +56,8 @@
 					</a>
 			</div>				
 
-			<div class="table-responsive col-11 text-center">
-			<div class="row">
+			<div class="table-responsive">
+			<div>
 				<table class="col table table-striped table-hover table-list-search" id="table_format">
 					<thead class="thead-light">
 						<tr class="align-text-bottom">
@@ -92,22 +92,23 @@
 			</div>
 		</div>
 	</div>
-	<!-- /#wrapper -->
+	
 
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script
-  		src="https://code.jquery.com/jquery-3.3.1.min.js"
-  		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  		crossorigin="anonymous"></script>
-
-		<script>
-		$(function(){
-	      $("#sidebar").load("sidebar.html");
-	    });
-	 
-		
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(function () {
+			$("#sidebar").load("./sidebar.html");
+			});
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip();
+			});			
 		function filterText() {
 				var rex = new RegExp($('#filterText').val());
 				if (rex == "/all/") { clearFilter() } else {
@@ -133,6 +134,6 @@
 			}
 		
 	</script>
-	<!-- /#End of wrapper -->
+	
 	</body>
 	</html>

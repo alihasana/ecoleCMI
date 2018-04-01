@@ -29,37 +29,41 @@
 		<!-- Sidebar included here -->
 		<div id="sidebar"></div>
 		<!-- /#sidebar-wrapper -->
-		<div class="container ins-container col-10" >
-			<h4 class="text-center mb-5 form-control" style="background-color: lightgray; ">Détails Matière</h4>
+		<div class="container col-10" >
+			<h4 class="text-center mb-5 form-control-sm heading"><strong>Détails Matière</strong></h4>
 				<form>
-					
 					<div class="form-row">
 						<div class="col-md-2  mb-4">
 						  <label for="" class="sr-only">Code</label>
-						  <input type="text" class="form-control is-valid" placeholder="Code"  value="">
+							<input type="text" class="form-control is-valid" title="Code" 
+							  data-toggle="tooltip" data-placement="bottom" placeholder="Code"  >
 						</div>
 						<div class="col-md-2 offset-lg-2 mb-4">
 						  <label for="" class="sr-only">Nom</label>
-						  <input type="text" class="form-control is-valid" id="" placeholder="Nom"   value="">
+							<input type="text" class="form-control is-valid" title="Nom" 
+							  data-toggle="tooltip" data-placement="bottom" placeholder="Nom"   >
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="col-md-2 mb-4">
 						  <label for="" class="sr-only">Date</label>
-						  <input type="text" class="form-control is-valid" placeholder="Date"  value="" disabled>
+							<input type="text" class="form-control is-valid" title="Date" 
+							  data-toggle="tooltip" data-placement="bottom" placeholder="Date"  >
 						</div>
 						<div class="col-md-1 offset-lg-2 mb-4">
 						  <label for="" class="sr-only">Coefficient</label>
-						  <input type="text" class="form-control is-valid" id="txt_name" placeholder="Coefficient"   value="">
+							<input type="text" class="form-control is-valid" id="txt_name" title="Coefficient" 
+							  data-toggle="tooltip" data-placement="bottom" placeholder="Coefficient"   >
 						</div>
 
 						<div class="col-md-2 offset-lg-2 mb-4">
 							<label for="" class="sr-only">Statut</label>
-							<input type="text" class="form-control is-valid" id="txt_name" placeholder="Coefficient" value="">
+							<input type="text" class="form-control is-valid" id="txt_name" title="Coefficient" 
+							  data-toggle="tooltip" data-placement="bottom" placeholder="Coefficient" >
 						</div>
 					</div>
 					<div align="right">
-						<button  class="btn btn-primary mb-4"><i class="fa fa-pencil"></i> 
+						<button  class="btn btn-primary mb-5"><i class="fa fa-pencil"></i> 
 						 Modifier</button>
 					</div>
 				</form>
@@ -67,26 +71,23 @@
 
 		
 
-		<!-- /#wrapper -->
-		<script src="https://maxcdn.bootstrapcdn.combootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script
-  		src="https://code.jquery.com/jquery-3.3.1.min.js"
-  		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  		crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-
-		<script  type="text/javascript">
-		$(function(){
-		  $("#sidebar").load("./sidebar.html");
-		});
-
-		 $(document).ready(function(){
-        $("#txt_name").keyup(function(){
-            alert($(this).val());
-        });
-    })
 		
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		 crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		 crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		 crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		 crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(function () {
+				$("#sidebar").load("./sidebar.html");
+			});
+			$(function () {
+				$('[data-toggle="tooltip"]').tooltip();
+			});
 		</script>
-		<!-- /#End of wrapper -->
+		
 	</body>
 	</html>
